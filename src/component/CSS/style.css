@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+.logo h2 {
+    margin-top: 1rem;
+    font-size: 4.5rem;
+    font-weight: 400;
+
+
+
+
+}
+
+.main-nav {
+    width: 100%;
+    height: 6.5rem;
+
+    box-shadow: 10px 5px 5px grey;
+    background-color: black;
+    color: white;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 10rem 1fr 1fr 10rem;
+
+}
+
+.input_search {
+    text-align: right;
+    padding-top: 1.4rem;
+    grid-column: 3;
+}
+
+::placeholder {
+
+    font-size: 1.6rem;
+}
+
+.input_search input[type=text] {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+
+
+.logo {
+
+    grid-column: 2/3;
+    justify-content: center;
+
+}
+
+.logo h2 {
+    position: relative;
+    top: .8rem
+}
+
+
+.logo h2 {
+    font-size: 3rem;
+    font-weight: 500;
+
+}
+
+.section {
+    margin: 3rem auto;
+    width: 60%;
+    height: 33rem;
+    border-radius: 4px;
+
+
+}
+
+.section h1 {
+    font-size: 3.2rem;
+}
+
+.inner_notes {
+
+    border: 2px solid #00000036;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+
+
+}
+
+.title {
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+}
+
+.title h3 {
+    font-size: 2rem;
+}
+
+.inner_notes input[type=text] {
+    margin-left: 1rem;
+    height: 6.5rem;
+    width: 98%;
+    padding: 0px 10px;
+    border: 1px solid #00000036;
+    
+}
+
+.inner_notes input[type=text]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    border-radius: 4px;
+}
+
+.btn_class {
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 8px 20px;
+    background-color: #0016ffa8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.heading {
+    width: 100%;
+
+    border-top: 1px solid #00000036;
+    border-bottom: 1px solid #00000036;
+    margin-left: 1rem;
+    margin-top: 1.7rem;
+}
+
+.heading h1 {
+    padding: 1.5rem 0;
+}
+
+.middle {
+
+    margin: 3rem auto;
+    width: 60%;
+    height: 50rem;
+    border-radius: 4px;
+
+    
+   
+   
+    margin: 2rem auto;
+    padding: 2rem auto;
+}
+
+.scroll{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 35rem;
+    height: 16.4rem;
+  overflow: hidden;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    transition: transform .4s;
+   
+}
+
+.cards:hover {
+
+    filter: drop-shadow(0.2rem 0.3rem 0.3rem grey);
+
+
+}
+
+.name {
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    overflow-y: scroll;
+   padding: 0 2px;
+    height: 9.6rem;
+
+}
+
+.name h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.btn_delete {
+
+    position: relative;
+ right: 2rem;
+    
+}
+
+.btn_edit {
+
+    position: relative;
+left: 2rem;
+    
+}
+
+.del-btn {
+
+    padding: 8px 18px;
+    background-color: #0016ffa8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.4s;
+    outline: none;
+
+}
+
+.del-btn:hover{
+    box-shadow: inset 110px 0 0 0 white;
+    color: black;
+    border: 1px solid black;
+}
+
+.edit-btn{
+    padding: 8px 20px;
+    background-color: #0016ffa8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+
+.edit-btn:hover{
+    box-shadow: inset 110px 0 0 0 white;
+    color: black;
+    border: 1px solid black;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1868px) {
+    .scroll {
+
+        margin: 3rem auto;
+       
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1235px) {
+    .scroll {
+
+        margin: 3rem auto;
+       
+    
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+@media (max-width: 789px) {
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        height: 13rem;
+        align-items: center;
+        gap: 1rem;
+
+    
+    }
+
+    .logo h2 {
+        margin-top: .3rem;
+        font-size: 4.2rem;
+        font-weight: 400;
+    
+    
+    
+    
+    }
+}
+    @media (max-width: 789px) {
+
+        .section h1 {
+            font-size: 2.5rem;
+        }
+
+    }
+       
+    
+
+@media (max-width: 717px) {
+
+    .cards {
+       width: 28rem;
+    }
+    .name h4 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    
+
+}
+@media (max-width: 522px) {
+
+    .cards {
+       width: 23rem;
+    }
+    .name h4 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .del-btn {
+
+        padding: 6px 10px;
+      
+    
+    }
+    .edit-btn {
+
+        padding: 6px 10px;
+       
+    
+    }
+
+    .name h4{
+        position: relative;
+     right: .2rem;
+    }
+    
+
+}
+   
+@media (max-width: 440px) {
+
+    .cards {
+       width: 21rem;
+    }
+    .del-btn {
+
+        padding: 6px 8px;
+      
+    
+    }
+    .edit-btn {
+
+        padding: 6px 8px;
+       
+    
+    }
+}
+
+@media (max-width: 476px) {
+
+.section h1{
+    font-size: 2rem;
+}
+}
